@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, black 0, blue 100%);
+}
+
+.container {
+    background: #fff;
+    max-width: 700px;
+    width: 100%;
+    padding: 20px 25px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0px 0px 30px 90px;
+    position: relative;
+
+}
+
+.title:before {
+    content: '';
+    width: 33px;
+    height: 4px;
+    bottom: 2px;
+    background: blue;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.input-box {
+    margin: 30px 0 10px 0;
+
+}
+
+p {
+    margin-left: 5px;
+}
+
+input {
+    border: none;
+    font-size: 18px;
+    outline: none;
+    width: 33%;
+    height: 45px;
+}
+
+.underline {
+    position: absolute;
+    background: #ccc;
+    width: 30%;
+    height: 2px;
+}
+
+.picture {
+    width: 400px;
+    height: 270px;
+    margin-left: 41.5%;
+    margin-top: 55px;
+    border-radius: 5px;
+    border: none;
+}
+
+input:focus+.underline:before {
+    content: '';
+    background: red;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+}
+
+input:valid+.underline:before {
+    content: '';
+    position: absolute;
+    background: green;
+    width: 100%;
+    height: 2px;
+}
+
+input[type="submit"] {
+    background: red;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #ccc;
+    letter-spacing: 1px;
+    color: red;
+}
+
+.text {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    margin: 20px 0 10px 0;
+    display: block;
+    padding: 15px 10px;
+}
+
+.twitter {
+    background: rgb(78, 189, 225);
+    width: 40%;
+    border-radius: 10px;
+}
+
+.facebook {
+    background: rgb(27, 27, 234);
+    width: 40%;
+    border-radius: 10px;
+}
+
+.github {
+    background: black;
+    width: 40%;
+    border-radius: 10px;
+}
+
+.twitter:hover {
+    background: rgb(55, 136, 163);
+    transition: all 300ms ease;
+}
+
+.facebook:hover {
+    background: rgb(10, 10, 147);
+    transition: all 300ms ease;
+}
+
+.github:hover {
+    background: rgb(90, 90, 90);
+    transition: all 300ms ease;
+}
+
+i {
+    font-size: 24px;
+    margin-right: 12px;
+}
+
+.whatsap {
+    background: rgb(10, 212, 10);
+    border-radius: 10px;
+    position: absolute;
+    top: 62%;
+    margin-left: 62%;
+}
+
+.whatsap a {
+    margin: 0;
+}
+
+.whatsap i,
+.telegram i {
+    margin-left: 5px;
+    font-size: 27px;
+}
+
+.telegram {
+    background: rgb(0, 155, 206);
+    border-radius: 10px;
+    position: absolute;
+    margin-left: 62%;
+    top: 72%;
+    margin-top: 10px;
+}
+
+.telegram a {
+    margin: 0;
+    padding-right: 17px;
+}
+
+.whatsap:hover {
+    background: rgb(31, 157, 31);
+    transition: all 300ms ease;
+}
+
+.telegram:hover {
+    background: rgb(0, 111, 147);
+    transition: all 300ms ease;
+}
+
+
+
+.svg-img {
+    border: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: 90%;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    display: none;
+    margin-left: 80%;
+}
+
+
+
+
+
+img {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left: 10px;
+    border-radius: 50%;
+    border: 5px solid blue;
+    top: 5px;
+}
+
+.menu {
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    top: 0;
+    right: 0;
+    background: #fff;
+}
+
+.ul {
+    margin-right: 10%;
+    transform: translateX(100%);
+    transition: transform 300ms;
+    background: #ccc;
+    border-radius: 5px;
+}
+
+ul {
+    display: flex;
+    column-gap: 30px;
+}
+
+
+
+li {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0px 8px;
+    display: none;
+    transition: all 300ms ease;
+    user-select: none;
+}
+
+li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+li:hover {
+    background: #bb3366;
+}
+
+li:hover a {
+    color: #ff8336;
+    transition: all 300ms ease;
+}
+
+input:checked+.ul ul li {
+    display: block;
+
+}
+
+input:checked+.ul {
+    transform: translateX(0);
+}
+
+.row2 {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+}
