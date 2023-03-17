@@ -8,5 +8,5 @@ This project was create with HTML and CSS.
 # Images link used in project
 Get images used in project:https://drive.google.com/drive/u/4/folders/1UbTqi5U74VRPRuJCqiT_CXIZG6WKMCfq
 
-#Watch the project on youtube
+# Watch the project on youtube
 Watch video:https://youtu.be/jpIfDFb2zQo
